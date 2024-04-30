@@ -1,0 +1,22 @@
+<button (click)="generateNumber(1)" type="button">Generate first number</button>
+<button (click)="generateNumber(2)" type="button">
+  Generate second number
+</button>
+
+<div>
+  <h2>first number</h2>
+  <p>{{ firstRandomNumber ?? 0 }}</p>
+  <h2>second number</h2>
+  <p>{{ secondRandomNumber ?? 0 }}</p>
+</div>
+
+<section>
+  <button (click)="calcul('+')">+</button
+  ><button (click)="calcul('-')">-</button
+  ><button (click)="calcul('*')">*</button
+  ><button (click)="calcul('/')">/</button>
+</section>
+
+<section>
+  <h3>Result : {{ result ?? "" }}</h3>
+</section>
